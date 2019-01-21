@@ -13,7 +13,8 @@ unzip dependency-check-4.0.2-release.zip
 
 RUN rm dependency-check-4.0.2-release.zip
 
-#todo - update CVE database
+#todo - update CVE database#
+RUN ./dependency-check/bin/dependency-check.sh --updateonly
 
 # default argument for ENTRYPOINT
 CMD ["--help"]
